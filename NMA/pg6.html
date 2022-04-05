@@ -1,18 +1,164 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <head>
+        <style>
 
-        <title>
+            #container{
+                position: relative;
+                height: 800px;
+                width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color:rgb(10, 10, 10);
+                z-index: -5;       
+            }
 
-        </title>   
+        .stone1{
 
-            <h1>
-                Page 6
-            </h1>
-                <p>
-                    Go to <a href="pg1.html">Page 1</a>
-                </p>
+            position: absolute;
+            left: 0px; 
+            right: 100px;
+            top: 400px; 
+            z-index: 1;
+
+        }
+
+        .stone2{
+
+            position: absolute;
+            left: 900px; 
+            right: 0px;
+            top: 400px; 
+            z-index: -1;
+
+        }
+
+
+        .hazmat1{
+
+            position: absolute;
+            left: 200px; 
+            right: 0px;
+            top: 280px; 
+            z-index: 2;
+
+        }
+
+        .hazmat2{
+
+            position: absolute;
+            left: 900px; 
+            right: 0px;
+            top: 160px; 
+            z-index: 2;
+
+        }
+
+        .window1{
+
+            position: absolute;
+            left: 90px; 
+            right: 0px;
+            top: 260px; 
+            z-index: -1;
+
+        }
+
+
+        .window2{
+
+            position: absolute;
+            left: 1100px; 
+            right: 0px;
+            top: 130px; 
+            z-index: -1;
+
+}
+
+
+
+
+
+        </style>
+    </head>
+
+    <body style="background-color: black;">
+
+        <div class="stone1">
+
+            <img src="stone1.gif" alt="Stone Platform 1" style=
+            "width: 1000px;
+            height: 500px;">
+
+        </div>
+
+
+        <div class="stone2">
+
+            <img src="Stone2.gif" alt="Stone Platform 2" style=
+            "width: 600px;
+            height: 500px;">
+
+        </div>
+        
+
+        <div class="hazmat1">
+
+            <img src="Hazmat1.gif" alt="Hazmat 1" style=
+            "width: 350px;
+            height: 350px;">
+
+        </div>
+
+        <div class="hazmat2">
+
+            <img src="Hazmat2.gif" alt="Hazmat 2" style=
+            "width: 350px;
+            height: 350px;">
+
+        </div>
+
+        <div class="window1">
+
+            <img src="Duck Draft 2.PNG" alt="Window 1" style=
+            "width: 310px;
+            height: 180px;">
+
+        </div>
+
+
+        <div class="window2">
+
+            <img src="Cow draft 2.PNG" alt="Window 2" style=
+            "width: 310px;
+            height: 180px;">
+
+        </div>
+
+        
+            <!-- Howler -->
+
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js">
+                </script>
+
+
+                <script src="/howler.js/dist/howler.core.min"></script>
+                <script>
+                    var sound = new Howl({
+                    src: ['Watcher.mp3'],
+                    autoplay: true,
+                    loop: true,
+                    volume: 1,
+                    onend: function() {
+                        console.log('Finished!');
+                    }
+                });
+
+
+                </script>
+
+        
 
     </body>
 </html>
