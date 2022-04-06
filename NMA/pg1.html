@@ -16,6 +16,8 @@
         }
 
         .cow{
+            height: auto;
+            width: auto;
             position: absolute;
             left: 700px; 
             right: 1000px;
@@ -24,7 +26,8 @@
         }
 
         .grass{
-
+            height: auto;
+            width: auto;
             left: 300px; 
             right: auto ;
             top: 500px;
@@ -34,18 +37,20 @@
         }
 
         .clouds{
-
+            height: auto;
+            width: auto;
             position: absolute;
             left: 400px; 
             right: 400px;
             top: 20px; 
-            z-index: 15;
+            z-index: 4;
 
 
         }
 
         .sky{
-
+            height: auto;
+            width: auto;
             position: absolute;
             left: 20px; 
             right: 700px;
@@ -58,14 +63,55 @@
 
 
         .pipe{
-
+            height: auto;
+            width: auto;
             position: absolute;
             left: 39px; 
             right: auto;
             top: 10px;
-            z-index: 5; 
+            z-index: 15; 
+            
 
         }
+
+        .dirt{
+            width: auto;
+            height: auto;
+            left: 20px;
+            right: 0px;
+            top: 635px;
+            z-index: -1; 
+            position: absolute;
+
+        }
+
+        .link1{
+            
+            font-size: 100px;
+            left: 500px;
+            right: 0px;
+            top: 800px;
+            z-index: 20; 
+            position: absolute;
+        }
+
+
+        /*   Div Button Function  */
+
+        div.feature 
+                    {position: relative;}
+
+                    div.feature a 
+                        {position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        text-decoration: none; 
+                        z-index: 10; 
+                        background-color: #FFF; 
+                        opacity: 0; 
+                        filter: alpha(opacity=1);}
 
 
 
@@ -106,22 +152,34 @@
             </div>
 
     <div class="pipe">
+
+        <a href="pg6.html">
             
                 <img src="Pipe.gif" alt="Pipe" style=
-                "height: 790px;
+                "height: 900px;
                 width: 400px;">
+
+        </a>
             
             </div>
 
-            <div style=
-            "background-color: rgb(95, 50, 32);
-            height: 140px; width: 1000px;
-            left: 40px; right: 400px ;
-            top: 135px;
-            z-index: 0; position: relative;">
-            </div>
 
+    <div class="dirt">
 
+        
+    
+           <img src="dirt.jpg" alt="Dirt" height="150" width="1000">
+            
+        
+
+        </div>
+
+    <div class="link1">
+
+        <a href="pg3.html" style="color: rgba(124, 93, 52, 0);"> pg3 </a>
+
+        </div>
+        
             
         <!-- Howler -->
 
@@ -144,6 +202,6 @@
           
               </script>
 
-            </div>
+     </div>
     </body>
 </html>
