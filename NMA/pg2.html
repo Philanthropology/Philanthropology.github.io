@@ -1,18 +1,103 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <head>
+        <style>
 
-        <title>
+        #container{
+            position: relative;
+            height: 800px;
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(10, 10, 10);
+            z-index: -5;       
+        }
+
+        .chicken{
             
-        </title>   
+            position: absolute;
+            left: 460px; 
+            right: 150px;
+            top: 250px; 
+            z-index: 0;
 
-            <h1>
-                Page 2
-            </h1>
-                <p>
-                    Go to <a href="pg4.html">Page 4</a>  
-                </p>
+        }
 
+        .arms{
+
+            position: absolute;
+            left: 200px; 
+            right: 100px;
+            top: 0px; 
+            z-index: 1;
+
+        }
+
+        .machine{
+
+            position: absolute;
+            left: 600px; 
+            right: 300px;
+            top: 400px; 
+            z-index: 1;
+
+        }
+
+        .blood{
+
+            position: absolute;
+            left: 400px; 
+            right: 400px;
+            top: 400px; 
+            z-index: 1;
+
+        }
+
+
+
+
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <div id="container">
+
+            <div class="chicken">
+
+                    <img src="Chicken.gif" alt="Chicken" style=
+                    "height: 300px;
+                    width: 300px;">
+
+                </div>
+
+            <div class="arms">
+
+                    <img src="arms.gif" alt="Chicken" style=
+                    "height: auto;
+                    width: auto;">
+        
+                <div>
+
+            <div class="machine">
+
+                <img src="Machine.gif" alt="Machine" style=
+                "height: 400px;
+                width: 400px;">
+
+
+                </div>
+
+            <div class="blood">
+
+                <img src="blood-drip.gif" alt="Blood">
+
+                </div>
+
+
+
+
+
+        
+            <div>
     </body>
 </html>
