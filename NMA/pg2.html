@@ -97,6 +97,28 @@
 
 
 
+                <!-- Howler -->
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js">
+            </script>
+
+
+        <script src="/howler.js/dist/howler.core.min"></script>
+            <script>
+                var sound = new Howl({
+                src: ['chicken.mp3'],
+                autoplay: true,
+                loop: true,
+                volume: 1,
+                onend: function() {
+                    console.log('Finished!');
+                }
+            });
+
+
+            </script>
+
+
 
 
         
