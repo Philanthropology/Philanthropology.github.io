@@ -1,18 +1,123 @@
 <!DOCTYPE html>
 
 <html>
-    <body>
+    <head>
+        <style>
 
-        <title>
 
-        </title>   
+        #container{
+            position: relative;
+            height: 800px;
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(10, 10, 10);
+            z-index: -5;       
+        }
 
-            <h1>
-                Page 4
-            </h1>
-                <p>
-                    Go to <a href="pg6.html">Page 6</a>
-                </p>
+        .creature{
 
+            position: absolute;
+            left: 400px; 
+            right: 150px;
+            top: 150px; 
+            z-index: 2;
+
+        }
+
+    
+
+        .row{
+
+            position: absolute;
+            left: 000px; 
+            right: 150px;
+            top: 500px; 
+            z-index: -1;
+
+        }
+
+        .hazmat1{
+
+            position: absolute;
+            left: 690px; 
+            right: 0px;
+            top: -500px; 
+            z-index: 2;
+
+            }
+
+        .hazmat2{
+
+            position: absolute;
+            left: 200px; 
+            right: 0px;
+            top: -260px; 
+            z-index: 2;
+
+        }
+
+        .floor{
+
+            position: absolute;
+            left: 150px; 
+            right: 150px;
+            top: -300px; 
+            z-index: -1;
+
+        }
+
+
+
+
+
+
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <div id="container">
+
+            <div class="creature">
+
+                    <img src="cron.gif" alt="Creature">
+
+                </div>
+
+
+           
+
+
+
+                <div class="row">
+
+                    <img src="Row.gif" alt="Row">
+
+                <div>
+
+
+                    <div class="hazmat1">
+
+                        <img src="Hazmat1.gif" alt="Hazmat">
+
+                        </div>
+
+                    <div class="hazmat2">
+
+                    <img src="Hazmat2.gif" alt="Hazmat 2">
+
+                        </div>
+
+
+                    <div class="floor">
+
+                        <img src="floor.gif" alt="Floor">
+
+                    </div>
+
+
+
+
+     
+        </div>
     </body>
 </html>
