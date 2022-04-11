@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <style>
+
+        #container{
+            position: relative;
+            height: 800px;
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:rgb(10, 10, 10);
+            z-index: -5;       
+        }
+
+        .cow{
+            
+            position: absolute;
+            left: 700px; 
+            right: 1000px;
+            top: 400px; 
+            z-index: 5;
+        }
+
+        .grass{
+            
+            left: 300px; 
+            right: auto ;
+            top: 500px;
+            z-index: 1; 
+            position: absolute;
+
+        }
+
+        .clouds{
+            
+            position: absolute;
+            left: 400px; 
+            right: 400px;
+            top: 20px; 
+            z-index: 10;
+
+
+        }
+
+        .sky{
+            
+            position: absolute;
+            left: 20px; 
+            right: 700px;
+            top: auto;
+            z-index: -1; 
+            
+
+
+        }
+
+
+        .pipe{
+            
+            position: absolute;
+            left: 39px; 
+            right: auto;
+            top: 10px;
+            z-index: 2; 
+            
+
+        }
+
+        .dirt{
+            
+            left: 20px;
+            right: 0px;
+            top: 635px;
+            z-index: -1; 
+            position: absolute;
+
+        }
+
+        .link1{
+            
+            font-size: 100px;
+            left: 1400px;
+            right: 0px;
+            top: 50px;
+            z-index: 2; 
+            position: absolute;
+        }
+
+
+        .pipe2{
+
+            font-size: 100px;
+            left: 1348px;
+            right: 0px;
+            top: -40px;
+            z-index: 2; 
+            position: absolute;
+
+        }
+
+
+       
+
+        </style>
+    </head>
+        
+
+<body style="background-color: black;">
+
+
+            <title>
+
+                Live Tank 01
+
+            </title>
+
+
+    <div id="container">
+
+
+                <img src="Sky.gif" alt="Sky" style=
+                "height: 500px; 
+                width: 900px;">
+
+        <div class="cow">
+
+                <img src="Cow.gif" alt="Cow" style=
+                "width: 200px; 
+                height: 200px;">
+
+            </div>
+
+
+        <div class="grass">
+
+                <img src="Grass.gif" alt="Grass" style=
+                "height: 150px; 
+                width: 1100px;">              
+            
+            </div>
+
+
+        <div class="clouds">
+
+        <a href="pg3.html">
+
+                <img src="Clouds.gif" alt="Clouds" style=
+                "height: auto; 
+                width: auto;">
+
+        </a>
+
+            </div>
+
+
+        <div class="pipe">
+
+        <a href="pg3.html">
+            
+                <img src="Pipe.gif" alt="Pipe" style=
+                "height: 900px;
+                width: 400px;">
+
+        </a>
+            
+            </div>
+
+
+
+        <div class="dirt">
+
+    
+           <img src="dirt.jpg" alt="Dirt" height="150" width="1000">
+            
+
+        </div>
+
+
+
+        <div class="link1">
+
+            <a href="pg6.html" style="color: rgba(255, 145, 0, 0);"> pg3 </a>
+
+        </div>
+
+
+
+
+        <div class="pipe2">
+
+            <a href="pg6.html">
+
+        <img src="pipe-2.gif" alt="Pipe2">
+
+        </a>
+        
+        </div>
+
+            
+        <!-- Howler -->
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.js"></script>
+              </script>
+          
+          
+              <script src="/howler.js/dist/howler.core.min"></script>
+              <script>
+                  var sound = new Howl({
+                  src: ['Cow.mp3'],
+                  autoplay: true,
+                  loop: true,
+                  volume: 1,
+                  onend: function() {
+                      console.log('Finished!');
+                  }
+              });
+
+          
+              </script>
+
+     </div>
+    </body>
+</html>
